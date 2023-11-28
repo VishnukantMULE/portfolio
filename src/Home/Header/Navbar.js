@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './Navbar.css';
 import { GrResources } from "react-icons/gr";
+import { PiContactlessPaymentFill } from "react-icons/pi";
+
 
 
 
@@ -47,8 +49,8 @@ const Navbar = () => {
                 {(isDesktop || isOpen) && (
                     <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
                         <button className='navbtn' href="/">Home</button>
-                        <button className='navbtn' href="/contact">Contact</button>
-                        <button className='navbtn' href="/resources"> <GrResources />Resources</button>
+                        <button className='navbtn' href="/contact"><PiContactlessPaymentFill/>&nbsp;Contact</button>
+                        <button className='navbtn' href="/resources"><GrResources/>&nbsp;Resources</button>
                     </div>
                 )}
             </div>

@@ -3,10 +3,13 @@
   justify-content: space-around;
   align-items: center;
   min-height: 80vh;
-  margin-top: 90px;
+  
 }
 
 .headingname {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   font-size: 80px;
 }
 
@@ -77,6 +80,7 @@
   }
 
   .landing-container {
+    margin-top: 90px;
     flex-direction: column;
   }
 
@@ -115,8 +119,9 @@
   }
 
   .mydetail {
+    padding: 5px;
     max-width: 100%;
-    font-size: 18px;
+    font-size: 13px;
   }
 
   .text-section h1 {

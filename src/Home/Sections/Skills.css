@@ -1,0 +1,40 @@
+.skill-container {
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 60px;
+  border: 1px solid black;
+}
+
+.windowrec {
+  padding: 10px;
+  display: flex;
+  animation: moveIcons 10s linear infinite;
+}
+
+@keyframes moveIcons {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 80px));
+  }
+}
+
+.skill-item {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .skill-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skill-container {
+    width: 95%;
+  }
+}
