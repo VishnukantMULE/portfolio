@@ -1,0 +1,157 @@
+@keyframes handwriting {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.navbar {
+  text-align: center;
+  background-color: #000000;
+  padding: 20px 0px ;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.navbar-brand a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.navbar-brand a span {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.navbar-brand a span::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  animation: handwriting 1.5s forwards;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.menu-toggle span {
+  background-color: #fff;
+  height: 2px;
+  margin: 4px 0;
+  width: 25px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.navbar-links {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbtn  {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: transparent;
+
+  font-weight: 600;
+  font-size: large;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+   
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #000000;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .navbar-links.active {
+    opacity: 1;
+  }
+
+  .navbtn {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+  }
+
+  .menu-toggle.active + .navbar-links {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .navbar-links {
+    font-weight: 600;
+
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 2px;
+  }
+
+  .navbar-links {
+    font-weight: 600;
+
+    display: flex;
+  }
+}
