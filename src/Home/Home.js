@@ -4,6 +4,7 @@ import Landing from './Header/Landing'
 import Projects from './Sections/Projects'
 import Blogs from './Sections/Blogs'
 import Skills from './Sections/Skills'
+import Footer from './Footer/Footer'
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
         <Skills/>
         <Projects/>
         <Blogs/>
+        <Footer/>
+
     </div>
   )
 }

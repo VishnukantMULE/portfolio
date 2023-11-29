@@ -10,7 +10,6 @@ const Landing = () => {
     const [images, setImages] = useState([img1, img2, img3]);
     const controls = useAnimation();
     const imageControls = useAnimation();
-
     const variants = {
         hidden: { opacity: 0, x: -100 },
         visible: { opacity: 1, x: 0 },
@@ -40,39 +39,41 @@ const Landing = () => {
 
     return (
         <div className="landing-container">
-            <div className='imgcontainer'>
-                {images.map((image, index) => (
-                    <motion.div
-                        key={index}
-                        initial="hidden"
-                        animate={controls}
-                        variants={variants}
-                        transition={{ duration: 0.5, ease: 'easeInOut' }}
-                        className="circle"
-                        style={{
-                            width: index === 1 ? '50vw' : '15vw',
-                            height: index === 1 ? '50vw' : '15vw',
-                        }}
-                        onClick={() => handleClick(index)}
-                    >
-                        {index === 1 ? (
-                            <motion.img
-                                src={image}
-                                alt="Vishnukant Mule"
-                                className="circle-image"
-                                animate={imageControls}
-                                variants={variants}
-                                transition={{ duration: 0.5, ease: 'easeInOut' }}
-                            />
-                        ) : (
-                            <img src={image} alt="Vishnukant Mule" className="circle-image" />
-                        )}
-                    </motion.div>
-                ))}
-            </div>
+        <div className="imgcontainer">
+        {images.map((image, index) => (
+    <motion.div
+        key={index}
+        initial="hidden"
+        animate={controls}
+        variants={variants}
+        transition={{ duration: 0.5, ease: 'easeInOut' }}
+        className="circle"
+        style={{
+            width: index === 1 ? '50vw' : '15vw',
+            height: index === 1 ? '38vw' : '10vw', // Adjusted height for index 1 on mobile
+            marginBottom: '20px',
+        }}
+        onClick={() => handleClick(index)}
+    >
+        {index === 1 ? (
+            <motion.img
+                src={image}
+                alt="Vishnukant Mule"
+                className="circle-image"
+                animate={imageControls}
+                variants={variants}
+                transition={{ duration: 0.5, ease: 'easeInOut' }}
+            />
+        ) : (
+            <img src={image} alt="Vishnukant Mule" className="circle-image" />
+        )}
+    </motion.div>
+))}
 
-            <div className="mydetail">
-                <h1 className='headingname'>Vishnukant Mule</h1>
+        </div>
+
+        <div className="mydetail">
+                <h1 className="headingname">Vishnukant Mule</h1>
                 <motion.div className="text-section">
                     <Typewriter
                         options={{
@@ -93,7 +94,6 @@ const Landing = () => {
                         front-end and back-end technologies.</p>
                 </motion.div>
             </div>
-
         </div>
     );
 };

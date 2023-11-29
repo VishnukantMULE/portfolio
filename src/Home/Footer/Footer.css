@@ -1,0 +1,74 @@
+.footer-container {
+    background-color: #000000;
+    padding: 20px;
+    display: grid;
+   
+    gap: 10px; /* Add some space between the columns */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  }
+  .line{
+    color: #ffffff;
+    background-color: #ffffff;
+  }
+  .company-name {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Add space between name and address */
+  }
+  
+  .company-address {
+    color: #ffffff;
+    font-size: 14px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center; /* Center social links horizontally */
+  }
+  
+  .social-links a {
+    margin: 0 10px; /* Add space between social links */
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-options {
+    display: flex;
+    justify-content: center; /* Center footer options horizontally */
+    /* margin-top: 20px; */
+  }
+  
+  .footer-option {
+    margin: 0 20px; /* Add space between footer options */
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .all-rights-reserved {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Adjust the height as needed */
+  }
+  
+  /* Responsive design */
+  @media only screen and (max-width: 600px) {
+    .footer-container {
+      grid-template-columns: 1fr; /* Change to a single column on small screens */
+    }
+  
+    .company-info,
+    .social-links,
+    .footer-options {
+      margin-bottom: 20px; /* Add space between sections on small screens */
+    }
+  }
