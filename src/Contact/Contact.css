@@ -1,65 +1,35 @@
-/* Define your styles here */
+.border-contact{
+  color: black;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 
-/* Container styles */
-.contact-container {
-    max-width: 400px; /* Adjust the maximum width as needed */
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .cntc{
-    background-color: #000000;
-    color: white;
-  }
-  /* Form styles */
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 8px;
-  }
-  
-  input {
-    padding: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
- .buttone {
-    background-color: #ff0000;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .buttone:hover {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .buttone.close-button {
-    border: 1px solid rgb(158, 158, 158);
+  border: 1px solid rgb(112, 112, 112);
+}
+.contact-icons{
+  display: flex;
+  justify-content: space-around;
+}
+.iconpng {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
 
-    background-color: #ffffff;
-    color: #000000;
-    margin-top: 8px;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .contact-container {
-      max-width: 100%;
-    }
-  }
-  
+.iconpng:hover {
+  transform: scale(1.1);
+}
+
+.closebutton{
+  background-color: transparent;
+  height: 30px;
+  width: 100%;
+  font-size: large;
+  color: rgb(123, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+.closebutton:hover{
+  background-color: red;
+  transition: transform 0.3s ease;
+  transform: scale(1.0);
+  color: white;
+}

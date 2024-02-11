@@ -1,0 +1,40 @@
+.resources-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .resource-card {
+    width: 30%; /* Adjust the width as needed */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+  }
+  
+  .card-buttons {
+    
+    margin-top: 10px;
+  }
+  
+  .card-button {
+    background-color: rgb(221, 221, 255);
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .resource-card {
+      width: 45%; /* Adjust the width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .resource-card {
+      width: 100%; /* Full width for screens smaller than 576px */
+    }
+  }
+  

@@ -3,7 +3,6 @@
 import React from "react";
 import "./Projects.css";
 import psLogo from "./Images/PravahStudio.png";
-import ccLogo from "./Images/CourseCrafter AI.png";
 import cxLogo from "./Images/clinicx.png";
 import aaLogo from "./Images/accousticall.png"
 
@@ -53,7 +52,7 @@ export default function Projects() {
       <div className="project-item">
         <div className="project-image">
           <img
-            src={ccLogo}
+            src="https://ik.imagekit.io/3jobkavje/CourseCrafter%20AI.png?updatedAt=1700593450651"
             alt="CourseCrafter AI Logo"
             className="project-logo"
           />

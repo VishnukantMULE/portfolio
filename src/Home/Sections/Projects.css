@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  /* font-family: "Arial", sans-serif; */
 }
 
 .projects-container {
@@ -79,6 +79,8 @@ body {
 .btnlink {
   text-decoration: none;
 }
+
+
 
 @media (max-width: 768px) {
   .project-item {

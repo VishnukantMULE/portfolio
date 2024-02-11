@@ -14,7 +14,7 @@ export default function Home() {
         <Landing/>
         <Skills/>
         <Projects/>
-        <Blogs/>
+        {/* <Blogs/> */}
         <Footer/>
 
     </div>

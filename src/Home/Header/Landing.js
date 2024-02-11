@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-import img1 from './Images/vishnukant_mule_rc.jpg';
-import img2 from './Images/vishnukant_mule_travel.jpg';
-import img3 from './Images/vishnukant_mule_ggl.jpg';
+import img2 from '../../Assets/Images/vishnukant_mule_rc.jpg';
+import img1 from '../../Assets/Images/vishnukant_mule_travel.jpg';
+import img3 from '../../Assets/Images/vishnukant_mule_ggl.jpg';
+// import img1 from '../../Assets/Images/1685885175222.jpeg';
+// import img1 from '../../Assets/Images/myimag3.jpg';
+// import img1 from '../../Assets/Images/LRM_20230909_155617.jpg';
+// import img7 from '../../Assets/Images/vishnukant_mule_iphn.jpg';
 import './Landing.css';
 
 const Landing = () => {

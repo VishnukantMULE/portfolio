@@ -4,7 +4,7 @@ import './Navbar.css';
 import { GrResources } from "react-icons/gr";
 import { PiContactlessPaymentFill } from "react-icons/pi";
 import { SiGoogledocs } from "react-icons/si";
-import ContactModal from './ContactModal'; // Import the ContactModal component
+import ContactModal from './ContactModal'; 
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -30,7 +30,7 @@ const Navbar = () => {
 
   const openContactModal = () => {
     setShowContactModal(true);
-    setIsOpen(false); // Close the navbar menu if open
+    setIsOpen(false); 
   };
 
 
@@ -60,7 +60,7 @@ const Navbar = () => {
           <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
             <button className='navbtn' onClick={()=>navigate('/docs')}><SiGoogledocs />&nbsp;Docs</button>
             <button className='navbtn' onClick={openContactModal}><PiContactlessPaymentFill />&nbsp;Contact</button>
-            <button className='navbtn' href="/resources"><GrResources/>&nbsp;Resources</button>
+            <button className='navbtn' onClick={()=>navigate('/resourses')}><GrResources/>&nbsp;Resources</button>
           </div>
         )}
 
