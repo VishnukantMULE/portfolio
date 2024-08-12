@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import Certifications from "./Certifications";
 import Educational from "./Educational";
 import ProjectDoc from "./ProjectDoc";
+import mylogosvg from '../Assets/logo/vector/default-monochrome.svg'
 
 import "./style/Doc.css";
 
@@ -47,9 +48,15 @@ export default function Document() {
               whileHover="visible"
               transition={{ duration: 0.5 }}
             >
-              <a href="/">Vishnukant Mule</a>
+          
+          <a href="/">
+
+              <img src={mylogosvg} alt="Vishnuknat mule" className='logoimag' />
+          </a>
             </motion.div>
+
           </div>
+          <hr />
 
           <div
             className={`menu-toggle ${isOpen ? "active" : ""}`}
@@ -63,18 +70,16 @@ export default function Document() {
           {(isDesktop || isOpen) && (
             <div className={`navbar-links ${isOpen ? "active" : ""}`}>
               <button
-                className={`navbtn ${
-                  activeTab === "certifications" ? "underline" : ""
-                }`}
+                className={`navbtn ${activeTab === "certifications" ? "underline" : ""
+                  }`}
                 onClick={() => handleTabClick("certifications")}
               >
                 <IoDocumentText />
                 &nbsp;Certifications
               </button>
               <button
-                className={`navbtn ${
-                  activeTab === "educational" ? "underline" : ""
-                }`}
+                className={`navbtn ${activeTab === "educational" ? "underline" : ""
+                  }`}
                 onClick={() => handleTabClick("educational")}
               >
                 {" "}
@@ -82,9 +87,8 @@ export default function Document() {
                 &nbsp;Resume
               </button>
               <button
-                className={`navbtn ${
-                  activeTab === "projectDoc" ? "underline" : ""
-                }`}
+                className={`navbtn ${activeTab === "projectDoc" ? "underline" : ""
+                  }`}
                 onClick={() => handleTabClick("projectDoc")}
               >
                 <IoDocumentText />
@@ -93,6 +97,7 @@ export default function Document() {
             </div>
           )}
         </div>
+        <hr></hr>
       </nav>
 
       <AnimatePresence>

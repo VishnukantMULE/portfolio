@@ -4,8 +4,10 @@ import './Navbar.css';
 import { GrResources } from "react-icons/gr";
 import { PiContactlessPaymentFill } from "react-icons/pi";
 import { SiGoogledocs } from "react-icons/si";
-import ContactModal from './ContactModal'; 
+import ContactModal from './ContactModal';
 import { useNavigate } from "react-router-dom";
+// import mylogo from '../../Assets/logo/profile.png'
+import mylogosvg from '../../Assets/logo/vector/default-monochrome.svg'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,14 +32,15 @@ const Navbar = () => {
 
   const openContactModal = () => {
     setShowContactModal(true);
-    setIsOpen(false); 
+    setIsOpen(false);
   };
 
 
 
   return (
-    <nav className="navbar">
+    <nav className="navbara">
       <div className="navbar-container">
+
         <div className="navbar-brand">
           <motion.div
             variants={brandVariants}
@@ -46,7 +49,10 @@ const Navbar = () => {
             whileHover="visible"
             transition={{ duration: 0.5 }}
           >
-            <a href="/">Vishnukant Mule</a>
+            {/* <a href="/">Vishnukant Mule</a> */}
+            <img src={mylogosvg} alt="Vishnuknat mule" className='logoimag'/>
+
+
           </motion.div>
         </div>
 
@@ -58,14 +64,15 @@ const Navbar = () => {
 
         {(isDesktop || isOpen) && (
           <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-            <button className='navbtn' onClick={()=>navigate('/docs')}><SiGoogledocs />&nbsp;Docs</button>
+            <button className='navbtn' onClick={() => navigate('/docs')}><SiGoogledocs />&nbsp;Docs</button>
             <button className='navbtn' onClick={openContactModal}><PiContactlessPaymentFill />&nbsp;Contact</button>
-            <button className='navbtn' onClick={()=>navigate('/resourses')}><GrResources/>&nbsp;Resources</button>
+            <button className='navbtn' onClick={() => navigate('/resourses')}><GrResources />&nbsp;Resources</button>
           </div>
         )}
 
         {showContactModal && <ContactModal closeModal={() => setShowContactModal(false)} />}
       </div>
+      <hr />
     </nav>
   );
 };

@@ -7,9 +7,10 @@
   }
 }
 
-.navbar {
+.navbara {
   text-align: center;
-  background-color: #000000;
+  background-color: #ffffff;
+  color: black;
   padding: 20px 0px ;
   position: fixed;
   width: 100%;
@@ -23,6 +24,11 @@
   align-items: center;
 }
 
+.logoimag{
+  height: 25px;
+  width: auto;
+
+}
 .navbar-brand {
   /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   margin-left: 20px;
@@ -32,7 +38,7 @@
 }
 
 .navbar-brand a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   display: inline-block;
   white-space: nowrap;
@@ -60,7 +66,7 @@
 }
 
 .menu-toggle span {
-  background-color: #fff;
+  background-color: #000000;
   height: 2px;
   margin: 4px 0;
   width: 25px;
@@ -110,7 +116,7 @@
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(to right, #aae7ff, #fdb1b1);
+  background: linear-gradient(to right, #000000, #ff0000);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -130,7 +136,7 @@
     top: 60px;
     right: 0;
     width: 100%;
-    background-color: #000000;
+    background-color: #ffffff;
     flex-direction: column;
     text-align: center;
     padding: 10px;
