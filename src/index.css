@@ -1,6 +1,7 @@
 @font-face {
   font-family: "office-bold";
-  src: url(./fonts/OfficeCodeProD-Bold.woff);
+  src:url(./fonts/OfficeCodePro-Regular.woff);
+  /* src: url(./fonts/OfficeCodeProD-Bold.woff); */
 }
 
 

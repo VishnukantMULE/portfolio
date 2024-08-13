@@ -21,6 +21,7 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinux } from "react-icons/fa";
 import { SiCockroachlabs } from "react-icons/si";
 import { SiApachecassandra } from "react-icons/si";
+import { RiFlutterFill } from "react-icons/ri";
 
 import { SiAuth0 } from "react-icons/si";
 
@@ -28,6 +29,7 @@ import { SiAuth0 } from "react-icons/si";
 import { DiNginx } from "react-icons/di";
 
 const skillsList = [
+  RiFlutterFill ,
     FaReact,
     FaNodeJs,
     SiPython,

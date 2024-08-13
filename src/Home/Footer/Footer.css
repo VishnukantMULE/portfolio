@@ -34,7 +34,8 @@
   }
   
   .social-links a {
-    margin: 0 10px; /* Add space between social links */
+    text-align: center;
+    margin: 20px;
     color: #ffffff;
     text-decoration: none;
   }

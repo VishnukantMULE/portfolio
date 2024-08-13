@@ -1,0 +1,65 @@
+/* Existing CSS */
+.myservices {
+    min-height: 300px;
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.service-step {
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    border: solid rgb(216, 216, 216) 1px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.service-step:hover {
+    color: white;
+    background-color: rgb(255, 0, 0); /* Change the background color on hover */
+}
+
+.service-step:hover svg {
+    fill: rgb(255, 255, 255); /* Change this to the desired color */
+}
+
+.service-step::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #000000, #ff0000);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease; 
+    z-index: 0; 
+}
+
+.service-data {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1; /* Ensure content stays above the gradient */
+}
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+    .service-step {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;        margin-right: 0px;
+        width: 15%;
+        height: 200px;
+        /* border: solid rgb(138, 138, 138) 1px; */
+        box-shadow: inset;
+    }
+}

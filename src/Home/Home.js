@@ -5,6 +5,7 @@ import Projects from './Sections/Projects'
 import Blogs from './Sections/Blogs'
 import Skills from './Sections/Skills'
 import Footer from './Footer/Footer'
+import MyService from './Sections/services/MyService'
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
         <Navbar/>
         <Landing/>
         <Skills/>
-        <Projects/>
+        <MyService/>
+        {/* <Projects/> */}
         {/* <Blogs/> */}
         <Footer/>
 
