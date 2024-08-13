@@ -64,9 +64,9 @@ const Navbar = () => {
 
         {(isDesktop || isOpen) && (
           <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-            <button className='navbtn' onClick={() => navigate('/docs')}><SiGoogledocs />&nbsp;Docs</button>
-            <button className='navbtn' onClick={openContactModal}><PiContactlessPaymentFill />&nbsp;Contact</button>
-            <button className='navbtn' onClick={() => navigate('/resourses')}><GrResources />&nbsp;Resources</button>
+            <button className='navbtn' onClick={() => navigate('/docs')}>&nbsp;Docs</button>
+            <button className='navbtn' onClick={openContactModal}>&nbsp;Contact</button>
+            <button className='navbtn' onClick={() => navigate('/resourses')}>&nbsp;Resources</button>
           </div>
         )}
 

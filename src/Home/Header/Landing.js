@@ -92,7 +92,7 @@ const Landing = () => {
                             },
                         }}
                     />
-                    <p> Hello, I'm Vishnukant Mule, a passionate Full Stack Developer with a
+                    <p className='intro-para'> Hello, I'm Vishnukant Mule, a passionate Full Stack Developer with a
                         focus on creating innovative and efficient solutions. I have
                         experience in developing web applications and a strong foundation in
                         front-end and back-end technologies.</p>
