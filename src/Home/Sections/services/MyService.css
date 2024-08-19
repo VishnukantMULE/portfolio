@@ -1,7 +1,7 @@
 .myservices {
     min-height: 300px;
     display: flex;
-    padding-top: 5vw;
+    padding-top: 1vw;
     padding-bottom: 5vw;
     justify-content: space-around;
     flex-flow: row wrap;
@@ -66,6 +66,21 @@
     z-index: 1; /* Ensure content stays above the gradient */
 }
 
+.sectionText{
+    padding: 0.3em;
+    display: flex;
+    justify-content: start;
+    padding-left: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #4b4b4b;
+    background-color: #e2e2e2;
+}
+.hr2{
+    color: #ffffff;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
 @media (min-width: 1281px) { /* hi-res laptops and desktops */
     .service-step {
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -95,7 +110,7 @@
 @media (max-width: 768px) { /* mobile devices */
     .service-step {
         box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;        
-        width: 95%;
+        width: 45%;
         height: 20vh;
     }
 }

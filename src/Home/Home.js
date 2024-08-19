@@ -13,9 +13,20 @@ export default function Home() {
 
         <Navbar/>
         <Landing/>
+        <hr className='hr2'/>
         <Skills/>
+        <br/>
+            <div className='sectionText'>
+             My Approach to Success 
+            </div>
+
         <MyService/>
-        {/* <Projects/> */}
+
+        <br/>
+            <div className='sectionText'>
+             My Projects
+            </div>
+        <Projects/>
         {/* <Blogs/> */}
         <Footer/>
 

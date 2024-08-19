@@ -38,7 +38,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="navbara">
+    <nav className="ffffff">
       <div className="navbar-container">
 
         <div className="navbar-brand">
@@ -72,7 +72,7 @@ const Navbar = () => {
 
         {showContactModal && <ContactModal closeModal={() => setShowContactModal(false)} />}
       </div>
-      <hr />
+      <hr className='navhr'/>
     </nav>
   );
 };
